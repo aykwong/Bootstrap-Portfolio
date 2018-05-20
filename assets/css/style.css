@@ -1,5 +1,6 @@
 body {
     padding-bottom: 100px;
+    background-image: url("../images/tic-tac-toe/tic-tac-toe.png")
 }
 
 h1, h2 {
@@ -7,17 +8,61 @@ h1, h2 {
     font-weight: bold;
 }
 
-h1, footer {
+h1 {
     color: #ffffff;
     background-color: #4aaaa5;
+}
+
+footer {
+    color: #ffffff;
+    background-color: #777777;
+    border-top: 6px solid #4aaaa5;
 }
 
 p {
     line-height: 200%;
 }
 
+.container-fluid div {
+    overflow: auto;
+}
+
+#submitButton {
+    color: #ffffff;
+    background-color: #4aaaa5;
+}
+
+#portfolioImages img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#image-wrapper {
+    /* display: inline-block;
+    position: relative;
+    width: 100%; */
+    /* float: left; */
+}
+
+.absolute-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 70%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.caption {
+    background-color: #4aaaa5;
+    color: white;
+}
+
+
 /* xs < 768 */
-@media screen and (max-width:767px) {
+@media (max-width:767px) {
     h1 {
         font-size: 2em;
     }
@@ -29,11 +74,9 @@ p {
 
     nav#navheader {
         justify-content: center!important;
-        margin-top: 3%;
-        margin-bottom: 3%;
     }
 
-    img.float-left {
+    #indexContent .float-left {
         float: none!important;
         display: block;
         margin-left: auto;
@@ -42,21 +85,29 @@ p {
 }
 
 /* sm */
-@media screen and (min-width: 767px) {
+@media (min-width: 768px) {
     h1 {
         font-size: 2em;
+    }
+
+    .col-md-7 {
+        max-width: 85%;
     }
 }
 
 /* md */
-@media screen and (min-width: 960px) {
+@media (min-width: 960px) {
     h1 {
         font-size: 2.5em  ;
+    }
+
+    .col-md-7 {
+        max-width: 58.333333%;
     }
 }
 
 /* lg */
-@media screen and (min-width: 1140px) {
+@media (min-width: 1140px) {
     h1 {
         font-size: 3em;
     }
