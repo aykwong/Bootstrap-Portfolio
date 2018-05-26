@@ -12,10 +12,10 @@
 <body>
 <header class="container-fluid border-bottom border-dark bg-white">
     <div class="row">
-        <div class="col-12 col-md-5 offset-1">
+        <div class="col-12 col-md-4 offset-1 pl-0">
             <h1 class="bg-info text-white text-center py-3 mb-0">Alpha Kwong</h1>
         </div>
-        <nav class="col-12 col-md-6 navbar justify-content-end p-0 my-3" id="navheader">
+        <nav class="col-12 col-md-7 navbar justify-content-end p-0 my-3" id="navheader">
             <a href="index.html" class="px-4">About</a>
             <a href="portfolio.html" class="px-4 border-left border-dark">Portfolio</a>
             <a href="contact.html" class="px-4 border-left border-dark">Contact</a>
@@ -24,23 +24,25 @@
 </header>
 
 <section class="container-fluid">
-    <div class="col-12 col-md-7 offset-1 mt-5 bg-white" style="border: 1px solid #777777">
-    <h2 class="mx-3 py-4 text-info border-bottom border-dark">Contact</h2>
-    <form class="p-3" action="/action_page.php">
-        <div class="form-group">
-            <label for="inputName">Name</label>
-            <input type="name" class="form-control" id="inputName" placeholder="Jack Sparrow">
+    <div class="row">
+        <div class="col-10 col-md-10 offset-1 mt-5 bg-white" style="border: 1px solid #777777" id="contactContent">
+            <h2 class="mx-3 py-4 text-info border-bottom border-dark">Contact</h2>
+            <form class="p-3" action="/action_page.php">
+                <div class="form-group">
+                    <label for="inputName">Name</label>
+                    <input type="name" class="form-control" id="inputName" placeholder="Jack Sparrow">
+                </div>
+                <div class="form-group">
+                    <label for="emailAddress">Email Address</label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="jack.sparrow@pirates.com">
+                </div>
+                <div class="form-group">
+                    <label for="textArea">Message</label>
+                    <textarea class="form-control" id="textArea" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mb-2" id="submitButton">Submit</button>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="emailAddress">Email Address</label>
-            <input type="email" class="form-control" id="emailAddress" placeholder="jack.sparrow@pirates.com">
-        </div>
-        <div class="form-group">
-            <label for="textArea">Message</label>
-            <textarea class="form-control" id="textArea" rows="4"></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary mb-2" id="submitButton">Submit</button>
-    </form>
     </div>
 </section>
 
