@@ -66,10 +66,6 @@ p {
     .col-md-10 {
         max-width: 66.666666%;
     }
-
-    .img-fluid {
-        max-width: 50%;
-    }
 }
 
 @media (max-width: 950px) {
@@ -78,10 +74,6 @@ p {
     }
 
     .col-md-10 {
-        max-width: 100%;
-    }
-
-    .img-fluid {
         max-width: 100%;
     }
 }
